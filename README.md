@@ -1,9 +1,9 @@
-# Your Project's Title...
+# Flumist Astra Zeneca
 Your project's description...
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.hlx.page/
-- Live: https://main--{repo}--{owner}.hlx.live/
+- Preview: https://main--flumist-astrazeneca--hlxsites.hlx.page/
+- Live: https://main--flumist-astrazeneca--hlxsites.hlx.live/
 
 ## Installation
 
