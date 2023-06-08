@@ -20,6 +20,8 @@ footer .footer p {
 .footer > div > div {
   display: flex;
   flex-flow: row nowrap;
+  margin: 0 auto;
+  max-width: 1260px;
 }
 
 .footer ul {
