@@ -1,7 +1,7 @@
 footer {
   font-size: var(--body-font-size-s);
-  background-color: #1b1b1b;
-  color: #fff;
+  background-color: var(--footer-bg-color);
+  color: var(--text-white);
   display: block;
   margin: 0;
 }
@@ -70,7 +70,7 @@ footer .footer p {
   padding-bottom: 5px;
 }
 
-@media (min-width: 992px){
+@media (min-width: 900px){
   .footer {
     padding-bottom: 50px;
   }
@@ -86,14 +86,14 @@ footer .footer p {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 900px) {
   footer .footer {
     padding: 0 0 10px;
     background-position: 28px 216px;
   }
 
   .footer > div > div {
-    padding: 0 25px !important;
+    padding: 0 25px;
     display: flex;
     flex-flow: column nowrap;
   }
