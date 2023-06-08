@@ -50,13 +50,12 @@ header nav a:any-link {
 .nav-brand img {
   width: 212px;
   height: auto;
-  translate: -7px -5px;
 }
 
 .nav-extra {
   grid-area: extra;
   height: 45px;
-  font-size: var(--nav-font-size-s);
+  font-size: var(--nav-font-size-xs);
   padding: 0 10px;
 }
 
@@ -128,4 +127,140 @@ header nav a:any-link {
 .nav-tools {
   grid-area: tools;
   display: none;
+}
+
+nav svg {
+  fill: var(--text-blue);
+  cursor: pointer;
+}
+
+.nav-extra svg {
+  fill: var(--text-pink);
+}
+
+@media (max-width: 900px) {
+  header nav {
+    grid-template:
+    'extra extra extra' 35px
+    'brand tools tools' 73px
+    'sections sections sections' 1fr;
+  }
+
+  header nav ul {
+    align-items: end;
+  }
+
+  .nav-brand img {
+    height: 56px;
+    width: auto;
+    margin-left: 15px;
+    margin-bottom: 4px;
+  }
+
+  .nav-extra {
+    background-color: var(--highlight-background-color);
+    height: 35px;
+  }
+
+  .nav-extra ul {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .nav-extra li {
+    display: none;
+  }
+
+  .nav-sections li {
+    padding-top: 10px;
+    padding-bottom: 4px;
+  }
+
+  .nav-extra li:nth-of-type(3) {
+    display: block;
+  }
+
+  .nav-sections {
+    display: none;
+  }
+
+  .nav-sections li:last-of-type a {
+    background-color: var(--button-bg-color);
+    color: var(--text-white);
+    padding: 12px 24px;
+    border-radius: 8px 24px;
+    letter-spacing: -0.16px;
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 340px;
+    height: 22px;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+  }
+
+  nav[aria-expanded="true"] .nav-sections {
+    display: block;
+    background-color: var(--highlight-background-color);
+  }
+
+  .nav-sections ul {
+    display: block;
+    font-size: 20px;
+    line-height: 32px;
+    padding-inline-start: 0;
+  }
+
+  .nav-tools {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  .icon {
+    transform: translateY(6px);
+    margin-left: 6px;
+  }
+
+  .icon.icon-x {
+    transform: translateY(1px);
+  }
+
+  .icon-bars,
+  .icon-x {
+    margin-left: 25px;
+    margin-right: 20px;
+  }
+
+  .icon-x {
+    display: none;
+  }
+
+  nav[aria-expanded="true"] .icon-bars {
+    display: none;
+  }
+
+  nav[aria-expanded="true"] .icon-x {
+    display: block;
+  }
+}
+
+@media (min-width: 900px) {
+  .nav-brand img {
+    translate: -7px -5px;
+  }
+
+  .nav-sections li:last-of-type {
+    transform: translateY(-6px);
+  }
+
+  .nav-sections li:last-of-type .icon {
+    transform: translateY(6px);
+    margin-left: 5px;
+  }
 }
