@@ -35,6 +35,8 @@
   --link-color: #0074AF;
   --link-hover-color: #00A0DF;
   --background-color: #fff;
+  --background-color-gradient-start: #fff;
+  --background-color-gradient-end: #F0F1F3;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
   --text-color: #231F20;
@@ -50,9 +52,10 @@
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 18px;
-  --body-font-size-xs: 16px;
+  --body-font-size-l: 20px;
+  --body-font-size-m: 16px;
+  --body-font-size-s: 14px;
+  --body-font-size-xs: 12px;
 
   /* heading sizes */
   --heading-font-size-xxl: 40px;
@@ -83,8 +86,8 @@ body {
   font-family: var(--body-font-family);
   line-height: 1.4;
   color: var(--text-color);
-  background-color: var(--background-color);
   display: none;
+  background: transparent linear-gradient(180deg, var(--background-color-gradient-start) 0%, var(--background-color-gradient-end) 100%) 0% 0% no-repeat padding-box;
 }
 
 body.appear {
