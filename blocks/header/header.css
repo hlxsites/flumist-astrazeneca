@@ -64,6 +64,14 @@ header nav a:any-link {
   margin: 8px 22px 11px 0;
 }
 
+.nav-sections li {
+  padding: 0 16px 0 12px;
+}
+
+.nav-extra ul li {
+  position: relative;
+}
+
 .nav-extra li:last-of-type {
   margin-right: 0;
 }
@@ -76,24 +84,19 @@ header nav a:any-link {
   border-bottom: 2px solid var(--text-pink);
 }
 
-.nav-extra ul li {
-  position: relative;
-}
-
 .nav-extra ul li ul {
   display: none;
   position: absolute;
   left: 40px;
   top: 10px;
   margin-left: -55px;
-  padding: 5px;
   font-size: 14px;
   padding: 12px 16px 12px 16px;
   z-index: 9;
   color: #231F20;
   line-height: 18px;
   overflow: hidden;
-  box-shadow: 0px -3px 8px #0000001a;
+  box-shadow: 0 -3px 8px #0000001a;
   border-radius: 16px;
   font-weight: 400;
   background-color: var(--background-color);
@@ -105,6 +108,10 @@ header nav a:any-link {
   display: unset;
 }
 
+.nav-sections a:hover {
+  border-bottom: 2px solid var(--link-hover-color);
+}
+
 .nav-extra ul li ul a:any-link {
   color: var(--link-color);
 }
@@ -113,14 +120,6 @@ header nav a:any-link {
   grid-area: sections;
   font-size: var(--body-font-size-m);
   padding: 0 10px;
-}
-
-.nav-sections a:hover {
-  border-bottom: 2px solid var(--link-hover-color);
-}
-
-.nav-sections li {
-  padding: 0 16px 0 12px;
 }
 
 .nav-sections li:last-of-type {
