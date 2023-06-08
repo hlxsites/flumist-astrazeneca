@@ -49,6 +49,9 @@
   max-width: 1046px;
   margin:auto;
 }
+.columns.large {
+  max-width: 1260px;
+}
 
 .columns.large p {
   font-size: var(--body-font-size-l);
