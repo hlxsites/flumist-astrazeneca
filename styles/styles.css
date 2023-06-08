@@ -38,7 +38,7 @@
   --background-color-gradient-start: #fff;
   --background-color-gradient-end: #F0F1F3;
   --overlay-background-color: #eee;
-  --highlight-background-color: #ccc;
+  --highlight-background-color: #F0F1F3;
   --text-color: #231F20;
   --text-white: #fff;
   --text-green: #3D7B00;
@@ -68,6 +68,7 @@
   --nav-height: 108px;
   --nav-font-size-m: 16px;
   --nav-font-size-s: 14px;
+  --nav-font-size-xs: 12px;
 
 }
 
@@ -270,6 +271,11 @@ main img {
 .icon svg {
   height: 100%;
   width: 100%;
+}
+
+.section > div {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 @media (min-width: 900px) {

@@ -29,5 +29,16 @@ export default async function decorate(block) {
     navWrapper.className = 'nav-wrapper';
     navWrapper.append(nav);
     block.append(navWrapper);
+
+    const bars = block.querySelector('.icon-bars');
+    bars.addEventListener('click', () => {
+      nav.setAttribute('aria-expanded', 'true');
+    });
+
+    const x = block.querySelector('.icon-x');
+    x.addEventListener('click', () => {
+      nav.removeAttribute('aria-expanded');
+    });
+    
   }
 }
