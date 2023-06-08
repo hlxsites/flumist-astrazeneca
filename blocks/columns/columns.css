@@ -31,3 +31,37 @@
     order: unset;
   }
 }
+
+.columns p,
+.columns img {
+  font-size: var(--body-font-size-m);
+  max-width: 511px;
+}
+
+.columns.large p {
+  font-size: var(--body-font-size-l);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.columns.large img {
+  max-width: unset;
+}
+
+.columns li {
+  list-style: none;
+  padding-inline-start: 0;
+  font-size: var(--body-font-size-xs);
+}
+
+.columns.large a.button:any-link {
+  font-size: var(--body-font-size-m);
+}
+
+.columns.large .button-container {
+  margin-top: 50px;
+}
+
+.columns.large .button-container + p {
+  font-size: var(--body-font-size-m);
+}
