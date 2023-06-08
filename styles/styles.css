@@ -10,6 +10,24 @@
  * governing permissions and limitations under the License.
  */
 
+  /* fallback font for Open Sans (normal - 400) */
+  @font-face {
+    font-family: "open-sans-normal-400-fallback";
+    font-style: normal;
+    font-weight: 400;
+    size-adjust: 107%;
+    src: local("Arial");
+  }
+
+   /* fallback font for Open Sans (italic - 400) */
+   @font-face {
+    font-family: "open-sans-italic-400-fallback";
+    font-style: italic;
+    font-weight: 400;
+    size-adjust: 99.1%;
+    src: local("Arial");
+  }
+
  :root {
   /* colors */
   --link-color: #035fe6;
@@ -20,7 +38,7 @@
   --text-color: #000;
 
   /* fonts */
-  --body-font-family: 'Open Sans',sans-serif;
+  --body-font-family: 'Open Sans', 'open-sans-normal-400-fallback', arial, sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -57,7 +75,7 @@ body {
   font-size: var(--body-font-size-m);
   margin: 0;
   font-family: var(--body-font-family);
-  line-height: 1.6;
+  line-height: 1.4;
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
