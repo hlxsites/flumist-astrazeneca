@@ -34,11 +34,9 @@ export default async function decorate(block) {
     bars.addEventListener('click', () => {
       nav.setAttribute('aria-expanded', 'true');
     });
-
     const x = block.querySelector('.icon-x');
     x.addEventListener('click', () => {
       nav.removeAttribute('aria-expanded');
     });
-    
   }
 }
