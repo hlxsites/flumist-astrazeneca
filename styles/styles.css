@@ -18,7 +18,7 @@
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
   --text-color: #231F20;
-  --text-white: #ffffff;
+  --text-white: #fff;
   --text-green: #3D7B00;
   --text-blue: #0074AF;
   --text-pink: #A60063;
@@ -53,7 +53,6 @@
     --heading-font-size-m: 20px;
     --heading-font-size-s: 14px;
     --heading-font-size-xs: 12px;
-    
     --nav-height: 105px;
   }
 }
