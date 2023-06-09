@@ -326,13 +326,13 @@ main .section.highlight {
   background-color: var(--highlight-background-color);
 }
 
-main .embed > div {
+main .embed-youtube > div {
   display: flex;
   justify-content: center;
   max-width: 511px;
 }
 
-main .embed {
+main .embed-youtube {
   width: unset;
   text-align: center;
 }
