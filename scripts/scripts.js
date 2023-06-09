@@ -47,7 +47,7 @@ function buildAutoBlocks(main) {
  * Wraps images followed by links within a matching <a> tag.
  * @param {Element} container The container element
  */
-function wrapImgsInLinks(container) {
+export function wrapImgsInLinks(container) {
   const pictures = container.querySelectorAll('picture');
   pictures.forEach((pic) => {
     const link = pic.nextElementSibling;
