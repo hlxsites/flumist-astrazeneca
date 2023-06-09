@@ -14,7 +14,7 @@ export default function decorate(block) {
           // picture is only content in column
           picWrapper.classList.add('columns-img-col');
           if (block.classList.contains('spray')) {
-            picWrapper.append(createOptimizedPicture('/images/mister.png', 'Flumist Spray', false, [{ width: '750' }]))
+            picWrapper.append(createOptimizedPicture('/images/mister.png', 'Flumist Spray', false, [{ width: '750' }]));
           }
         }
       }
