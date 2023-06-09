@@ -1,0 +1,130 @@
+.table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  font-size: var(--body-font-size-xs);
+}
+
+@media (min-width: 600px) {
+  .table table {
+    font-size: var(--body-font-size-s);
+  }
+}
+
+@media (min-width: 900px) {
+  .table table {
+    font-size: var(--body-font-size-m);
+  }
+}
+
+.table table thead tr {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+
+.table table tbody tr {
+  border-bottom: 1px solid;
+}
+
+.table table th {
+  font-weight: 700;
+}
+
+.table table th, .table table td {
+  padding: 8px 16px;
+  text-align: left;
+}
+
+.table.flu table thead tr {
+  height: 44px;
+  border:none;
+}
+
+/* striped variant */
+.table.striped tbody tr:nth-child(odd) {
+  background-color: var(--overlay-background-color);
+}
+
+/* bordered variant */
+.table.bordered table th, .table.bordered table td {
+  border: 1px solid;
+}
+
+.table.flu table {
+  border-radius: 8px;
+  table-layout: fixed;
+  border-collapse: separate;
+  margin: 27px 0;
+  box-shadow: inset 1px 1px #00A0DF, 0 1px #00A0DF;
+  border-spacing: 0;
+}
+
+.table.flu table thead th {
+  background-color: #0074AF;
+  color: var(--text-white);
+  vertical-align: middle;
+  box-shadow: inset 1px 1px #00A0DF, 0 1px #00A0DF;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 6px 9px;
+}
+
+.table.flu table thead th:nth-child(1) {
+  border-top-left-radius: 8px;
+  background-color: #0074AF;
+}
+
+.table.flu table thead th:last-child {
+  border-top-right-radius: 8px;
+}
+
+.table.flu table tbody td {
+  box-shadow: inset 1px 1px #00A0DF, 0 1px #00A0DF;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: initial;
+  padding: 8px 6px 9px;
+}
+
+.table.flu table tbody td p {
+  margin:0;
+}
+
+.table.flu table tbody td p:nth-child(2) {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 2px;
+}
+
+.table.flu table tbody tr:nth-child(even) td {
+  background-color: #F0F1F3;
+}
+
+.table.flu table tbody tr:nth-child(odd) td {
+  background-color: var(--text-white);
+}
+
+.table.flu table tbody tr td:nth-child(1) {
+  background-color: #C0E1F0;
+  vertical-align: initial;
+  box-shadow: inset 1px 1px #00A0DF, 0 1px #00A0DF;
+  padding: 8px 6px 9px;
+  color: #231F20;
+}
+
+.table.flu table tbody tr td:last-child {
+  border-right: 1px solid #00a0df;
+}
+
+.table.flu table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+}
+
+.table.flu table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
+}
