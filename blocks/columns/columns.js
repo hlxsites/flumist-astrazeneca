@@ -20,7 +20,7 @@ export default function decorate(block) {
       });
       [...col.querySelectorAll('p.picture + h4 + p')].forEach((imgH4P) => {
         const imgH4PContainer = document.createElement('div');
-        imgH4PContainer.classList.add('imgH4P');
+        imgH4PContainer.classList.add('img-h4-p');
         imgH4P.after(imgH4PContainer);
         const oneUp = imgH4P.previousSibling.previousSibling;
         const towUp = oneUp.previousSibling.previousSibling;
