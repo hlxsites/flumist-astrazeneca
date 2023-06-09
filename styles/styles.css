@@ -122,12 +122,16 @@ h4, h5, h6 {
 
 h1 { 
   font-size: var(--heading-font-size-xxl);
-  letter-spacing: -1.54px;
+  letter-spacing: -1.28px;
+}
+
+.home h1 {
+  letter-spacing: -1.79px;
 }
 
 h2 { 
   font-size: var(--heading-font-size-xl);
-  letter-spacing: -1.79px;
+  letter-spacing: -1.54px;
 }
 h3 { font-size: var(--heading-font-size-m) }
 h4 { font-size: var(--heading-font-size-s) }
@@ -275,8 +279,8 @@ main img {
 }
 
 .section > div {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 @media (min-width: 900px) {
@@ -290,3 +294,4 @@ main img {
 main .section.highlight {
   background-color: var(--highlight-background-color);
 }
+
