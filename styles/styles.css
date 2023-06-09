@@ -136,14 +136,6 @@ h1 {
   letter-spacing: -1.79px;
 }
 
-.large h1 + p {
-  line-height: 28px;
-}
-
-.home .large h1 + p {
-  line-height: 36px;
-}
-
 h2 { 
   font-size: var(--heading-font-size-xl);
   letter-spacing: -1.54px;
@@ -164,6 +156,14 @@ h4 { font-size: var(--heading-font-size-s) }
 p, dl, ol, ul, pre, blockquote {
   margin-top: 22px;
   margin-bottom: 22px;
+}
+
+.large h1 + p {
+  line-height: 28px;
+}
+
+.home .large h1 + p {
+  line-height: 36px;
 }
 
 hr {
