@@ -324,4 +324,16 @@
   .columns.spray .columns-img-col picture:last-of-type img {
     display: none;
   }
+
+  .columns.large > div {
+    flex-direction: column-reverse;
+    gap:0;
+  }
+
+  .columns.large > div > div:nth-child(2) {
+    top: 0;
+    position: relative;
+    opacity: 1;
+    animation: fade 2s linear
+  }
 }
