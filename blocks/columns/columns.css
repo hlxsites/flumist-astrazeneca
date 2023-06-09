@@ -197,9 +197,7 @@
 }
 
 .columns.large {
-  margin-top: 77px;
-  /*margin-left: -10px;*/
-  /*margin-right: -10px;*/
+  margin-top: 35px;
 }
 
 .columns.large > div > div:nth-child(2){
@@ -222,11 +220,104 @@
 }
 
 .columns.large h1+p {
-  background-color: pink;
   font-size: 20px;
   line-height: 28px;
   margin:0;
   color: #231F20;
+}
+
+.columns.large ul {
+  margin:0;
+  padding:0;
+  margin-top:30px;
+}
+
+.columns.large.cards ul:nth-of-type(1) li {
+  margin:0;
+  padding:0;
+  background-color: pink;
+  border-radius: 8px;
+  padding: 19px 16px;
+  margin-bottom: 9px;
+  color: var(--text-white);
+}
+
+.columns.large.cards ul:nth-of-type(1) li:nth-of-type(1)::before {
+  background-image: none;
+}
+
+.columns.large.cards ul:nth-of-type(1) li:nth-of-type(2)::before {
+  background-image: none;
+}
+
+.columns.large.cards ul:nth-of-type(1) li:nth-of-type(3)::before {
+  background-image: none;
+}
+
+.columns.large.cards ul:nth-of-type(1) li:nth-child(1) {
+  background-color: #A60063;
+}
+
+.columns.large.cards ul:nth-of-type(1) li:nth-child(2) {
+  background-color: #3D7B00;
+}
+
+.columns.large.cards ul:nth-of-type(1) li:nth-child(3) {
+  background-color: #0074AF;
+}
+
+.columns.large.cards ul:nth-of-type(1) strong {
+  font-size: 20px;
+}
+
+.columns.large.cards ul:nth-of-type(1) a strong {
+  font-size: 16px;
+}
+
+.columns.large.cards ul:nth-of-type(1) a {
+  text-align: right;
+  width: 100%;
+  color: var(--text-white);
+  align-content: end;
+  left: calc(100% - 140px);
+
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.16px;
+  font-weight: bold;
+
+  background-image: url("/icons/white-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-right: 25px;
+}
+
+.columns.large ul li {
+  background-color: pink;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  padding: 24px 40px 20px;
+  position: relative;
+  max-width: 431px;
+}
+
+.columns.large ul li::before {
+  background-image: url("/icons/deco.png");
+  background-repeat: no-repeat;
+  left: -22px;
+  content: '';
+  position: absolute;
+  top: -17px;
+  width: 56px;
+  height: 43px;
+}
+
+@media (min-width: 900px) {
+  .columns.large li {
+    max-width: 479px;
+  }
 }
 
 @media (max-width: 900px) {
