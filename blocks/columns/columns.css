@@ -185,3 +185,20 @@
   }
 }
 
+.columns.spray .columns-img-col {
+  position: relative;
+}
+
+.columns.spray .columns-img-col picture:last-of-type img {
+  width: 342px;
+  height: 249px;
+  position: absolute;
+  bottom: -75px;
+  right: -145px;
+}
+
+@media (max-width: 900px) {
+  .columns.spray .columns-img-col picture:last-of-type img {
+    display: none;
+  }
+}
