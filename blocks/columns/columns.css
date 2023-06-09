@@ -409,3 +409,11 @@
 .img-h4-p:nth-of-type(3) h4 {
   color: var(--text-blue);
 }
+
+.about .columns > div > div:nth-of-type(1) {
+  order: 1;
+}
+
+.about .columns > div > div:nth-of-type(2) {
+  order: 0;
+}
