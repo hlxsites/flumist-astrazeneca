@@ -87,5 +87,16 @@
   }
 }
 
+@media (max-width: 900px) {
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .find-flumist-form > div:nth-child(3) {
+    margin-top: 30px;
+    margin-bottom: -5px;;
+  }
+}
+
 
 

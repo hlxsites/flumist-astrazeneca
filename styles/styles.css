@@ -206,6 +206,12 @@ a.button:any-link, button {
   overflow: hidden;
 }
 
+@media (max-width: 900px) {
+  a.button:any-link, button {
+    font-size: var(--body-font-size-m);
+  }
+}
+
 a.button:hover, a.button:focus, button:hover, button:focus  {
   background-color: var(--link-hover-color);
   cursor: pointer;
@@ -342,4 +348,34 @@ main .section.highlight {
 .section.wheretofind > div:nth-child(3){
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+@media (max-width: 900px) {
+  .section.wheretofind .default-content-wrapper {
+    text-align: left;
+  }
+
+  .fragment-container.wheretofind {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .section.wheretofind ul {
+    display: flex;
+    flex-flow: column;
+    list-style-type: none;
+  }
+
+  .section.wheretofind h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    line-height: 40px;
+    letter-spacing: -1.02px;
+  }
+
+  .section.wheretofind li {
+    width: 100%;
+    margin-bottom: 7px;
+  }
 }
