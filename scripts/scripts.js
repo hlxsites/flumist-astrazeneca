@@ -1,6 +1,5 @@
 import {
   sampleRUM,
-  buildBlock,
   loadHeader,
   loadFooter,
   decorateButtons,
@@ -19,9 +18,9 @@ const LCP_BLOCKS = []; // add your LCP blocks to the list
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
-function buildAutoBlocks(main) {
-  // no-op
-}
+// function buildAutoBlocks(main) {
+//   // no-op
+// }
 
 /**
  * Wraps images followed by links within a matching <a> tag.
@@ -47,7 +46,7 @@ export function decorateMain(main) {
   // hopefully forward compatible button decoration
   decorateButtons(main);
   decorateIcons(main);
-  buildAutoBlocks(main);
+  // buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
   wrapImgsInLinks(main);
