@@ -75,7 +75,7 @@
 
 @media (min-width: 900px) {
   :root {
-    --heading-font-size-xxl: 40px;
+    --heading-font-size-xxl: 48px;
     --heading-font-size-xl: 40px;
     --body-font-size-l: 24px;
     --body-font-size-m: 20px;
@@ -99,6 +99,13 @@ body {
   color: var(--text-color);
   display: none;
   background: transparent linear-gradient(180deg, var(--background-color-gradient-start) 0%, var(--background-color-gradient-end) 100%) 0% 0% no-repeat padding-box;
+  overflow:auto;
+  overflow-y: visible;
+  overflow-wrap: break-word;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 body.appear {
@@ -289,6 +296,8 @@ main img {
   .section > div {
     max-width: 1260px;
     margin: auto;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
