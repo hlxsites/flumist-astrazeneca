@@ -22,18 +22,6 @@ const LCP_BLOCKS = []; // add your LCP blocks to the list
 //   // no-op
 // }
 
-const loadScript = (url, callback, type) => {
-  const head = document.querySelector('head');
-  const script = document.createElement('script');
-  script.src = url;
-  if (type) {
-    script.setAttribute('type', type);
-  }
-  script.onload = callback;
-  head.append(script);
-  return script;
-};
-
 const getDefaultEmbed = (url) => `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
     <iframe src="${url.href}" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen=""
       scrolling="no" allow="encrypted-media" title="Content from ${url.hostname}" loading="lazy">
@@ -88,20 +76,18 @@ export function wrapImgsInLinks(container) {
   pictures.forEach((pic) => {
     const link = pic.nextElementSibling;
     if (link && link.tagName === 'A' && link.href) {
-      if (link.href.includes("youtube.com")) {
+      if (link.href.includes('youtube.com')) {
         link.innerHTML = pic.outerHTML;
 
         const parent = pic.parentNode;
         parent.textContent = '';
         const wrapper = document.createElement('div');
         wrapper.className = 'embed-placeholder';
-        // wrapper.innerHTML = '<div class="embed-placeholder-play"><button title="Play"></button></div>';
         wrapper.prepend(pic);
         wrapper.addEventListener('click', () => {
           loadEmbed(parent, link.href, true);
         });
         parent.append(wrapper);
-
       } else {
         link.innerHTML = pic.outerHTML;
         pic.replaceWith(link);
