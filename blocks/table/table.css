@@ -5,7 +5,6 @@
 
 .table table {
   width: 100%;
-  max-width: 100%;
   border-collapse: collapse;
   font-size: var(--body-font-size-xs);
 }
@@ -19,6 +18,33 @@
 @media (min-width: 900px) {
   .table table {
     font-size: var(--body-font-size-m);
+  }
+}
+
+.table.flu .mobile-desc {
+  position: relative;
+  right: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #5D5E60;
+  font-family: "Open Sans",sans-serif;
+  text-align: right;
+}
+
+.table.flu .mobile-desc::after {
+  content: '';
+  background-image: url("/icons/swipe-arrow.svg");
+  width: 10px;
+  height: 10px;
+  position: relative;
+  display: inline-block;
+  transform: rotate(270deg);
+  right: -5px;
+}
+
+@media (min-width: 900px) {
+  .table.flu .mobile-desc {
+    display: none;
   }
 }
 
@@ -56,6 +82,7 @@
 }
 
 .table.flu table {
+  overflow-x:auto;
   border-radius: 8px;
   table-layout: fixed;
   border-collapse: separate;
@@ -127,4 +154,22 @@
 
 .table.flu table tbody tr:last-child td:last-child {
   border-bottom-right-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .table.flu table {
+    width: 662px;
+  }
+
+  .table.flu table thead tr th:first-child {
+    position: sticky;
+    left: 0;
+    width: 160px;
+  }
+
+  .table.flu table tbody tr td:first-child {
+    position: sticky;
+    left: 0;
+    width: 160px;
+  }
 }

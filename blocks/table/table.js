@@ -26,5 +26,9 @@ export default async function decorate(block) {
     });
   });
   block.innerHTML = '';
+  const mobileDescription = document.createElement('p');
+  mobileDescription.textContent = 'Swipe to view more';
+  mobileDescription.className = 'mobile-desc';
+  block.append(mobileDescription);
   block.append(table);
 }
