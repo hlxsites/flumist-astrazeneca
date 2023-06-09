@@ -237,11 +237,6 @@
   right: -145px;
 }
 
-.about .columns.spray > div > div:last-of-type picture:last-of-type img {
-  bottom: 32px;
-  right: -120px;
-}
-
 @media (max-width: 900px) {
   .columns.spray .columns-img-col picture:last-of-type img {
     display: none;
@@ -280,4 +275,12 @@
 
 .img-h4-p:nth-of-type(3) h4 {
   color: var(--text-blue);
+}
+
+.about .columns > div > div:nth-of-type(1) {
+  order: 1;
+}
+
+.about .columns > div > div:nth-of-type(2) {
+  order: 0;
 }
