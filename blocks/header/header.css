@@ -80,7 +80,21 @@ header nav a:any-link {
 }
 
 .nav-extra a:hover {
-  border-bottom: 2px solid var(--text-pink);
+  border-bottom: 2px solid #CC569A;
+  color: #CC569A;
+}
+
+@media (min-width: 900px) {
+  .nav-extra li:nth-child(2)::after {
+    display: inline-block;
+    background: url("/icons/head-down-arrow.svg") no-repeat;
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: relative;
+    right: -2px;
+    bottom: -2px;
+  }
 }
 
 .nav-extra ul li ul {
