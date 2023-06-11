@@ -85,8 +85,7 @@
     padding-left: 10px;
   }
 
-  .columns img,
-  .columns ul {
+  .columns img {
     max-width: 511px;
   }
 }
@@ -106,6 +105,12 @@
   grid-area: p;
   margin: 0;
   font-size: 14px;
+}
+
+.about-flu .columns p,
+.about-flu .columns h3 {
+  font-size: 16px;
+  max-width: 511px;
 }
 
 .home .columns.large p {
@@ -416,6 +421,33 @@
   color: var(--text-blue);
 }
 
+/* at the bottom (when specificity allows) mostly quick and dirty styling for POC */
+
 .about .columns-container > div:first-of-type .columns > div {
   flex-direction: row-reverse;
+}
+
+.about-flu div.columns-container:first-of-type h3 {
+  font-size: 24px;
+}
+
+.about-flu div.columns-wrapper:nth-of-type(1) h3 {
+  color: var(--text-green);
+}
+
+.about-flu div.columns-wrapper:nth-of-type(3) h3 {
+  color: var(--text-blue);
+  font-size: 20px;
+}
+
+.about-flu div.columns-container:first-of-type .columns > div > div:first-of-type p.picture {
+  width: 249px;
+  height: 72px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.about-flu div.columns-container:first-of-type .columns > div > div:first-of-type p.picture img {
+  height: 72px;
+  width: auto;
 }

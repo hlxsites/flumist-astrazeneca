@@ -567,6 +567,13 @@ export function decorateButtons(element) {
           && twoup.childNodes.length === 1 && twoup.tagName === 'P') {
           a.className = 'button primary';
           twoup.classList.add('button-container');
+          const buttonText = twoup.parentElement.querySelector('p.button-container + p > strong');
+          if (buttonText) {
+            const buttonWrapper = document.createElement('div');
+            buttonWrapper.classList.add('primary-button-box');
+            twoup.after(buttonWrapper);
+            buttonWrapper.append(twoup, buttonText);
+          }
         }
         if (up.childNodes.length === 1 && up.tagName === 'EM'
           && twoup.childNodes.length === 1 && twoup.tagName === 'P') {
