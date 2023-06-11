@@ -107,6 +107,12 @@
   font-size: 14px;
 }
 
+.about-flu .columns p,
+.about-flu .columns h3 {
+  font-size: 16px;
+  max-width: 511px;
+}
+
 .home .columns.large p {
   font-size: var(--body-font-size-l);
   margin-top: 40px;
@@ -430,12 +436,6 @@
 .about-flu div.columns-wrapper:nth-of-type(3) h3 {
   color: var(--text-blue);
   font-size: 20px;
-}
-
-.about-flu .columns p,
-.about-flu .columns h3 {
-  font-size: 16px;
-  max-width: 511px;
 }
 
 .about-flu div.columns-container:first-of-type .columns > div > div:first-of-type p.picture {
