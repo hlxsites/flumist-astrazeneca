@@ -77,6 +77,8 @@ header nav a:any-link {
 
 .nav-extra a:any-link {
   color: var(--text-pink);
+  letter-spacing: -0.12px;
+  padding-right: 3px;
 }
 
 .nav-extra a:hover {
@@ -92,7 +94,7 @@ header nav a:any-link {
     width: 12px;
     height: 12px;
     position: relative;
-    right: -2px;
+    right: 0;
     bottom: -2px;
   }
 }
@@ -174,15 +176,25 @@ nav svg {
   .nav-extra {
     background-color: var(--highlight-background-color);
     height: 35px;
+    padding: 0;
   }
 
   .nav-extra ul {
     margin: 0;
-    justify-content: center;
+    padding: 0;
+    height: 35px;
   }
 
   .nav-extra li {
     display: none;
+    margin: auto;
+    letter-spacing: -0.14px;
+  }
+
+  .nav-extra a:any-link {
+    line-height: 22px;
+    padding-right: 0;
+    letter-spacing: -0.14px;
   }
 
   .nav-sections li {
@@ -192,6 +204,7 @@ nav svg {
 
   .nav-extra li:nth-of-type(3) {
     display: block;
+    font-size: 14px;
   }
 
   .nav-sections {
