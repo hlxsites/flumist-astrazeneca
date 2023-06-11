@@ -421,6 +421,8 @@
   color: var(--text-blue);
 }
 
+/* at the bottom (when specificity allows) mostly quick and dirty styling for POC */
+
 .about .columns-container > div:first-of-type .columns > div {
   flex-direction: row-reverse;
 }
