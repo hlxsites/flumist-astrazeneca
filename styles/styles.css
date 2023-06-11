@@ -168,6 +168,10 @@ p, dl, ol, ul, pre, blockquote {
   margin-bottom: 20px;
 }
 
+.primary-button-box p {
+  margin: 0 15px;
+}
+
 .large h1 + p {
   line-height: 28px;
 }
@@ -250,10 +254,6 @@ a.button:any-link, button {
 
 .columns .primary-button-box {
   margin: 0;
-}
-
-.primary-button-box p {
-  margin: 0 15px;
 }
 
 @media (max-width: 900px) {
