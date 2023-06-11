@@ -568,7 +568,7 @@ export function decorateButtons(element) {
           a.className = 'button primary';
           twoup.classList.add('button-container');
           const buttonText = twoup.parentElement.querySelector('p.button-container + p > strong');
-          if (buttonText){
+          if (buttonText) {
             const buttonWrapper = document.createElement('div');
             buttonWrapper.classList.add('primary-button-box');
             twoup.after(buttonWrapper);
