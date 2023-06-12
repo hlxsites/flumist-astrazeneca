@@ -1,0 +1,14 @@
+<svg id="Icon_Frame" data-name="Icon Frame" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_54" data-name="Rectangle 54" width="16" height="16" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <rect id="Rectangle_53" data-name="Rectangle 53" width="32" height="32" fill="none"/>
+  <g id="Mask_Group_203" data-name="Mask Group 203" transform="translate(8 8)" clip-path="url(#clip-path)">
+    <g id="plus" transform="translate(1 1)">
+      <line id="Line_205" data-name="Line 205" y2="14" transform="translate(7)" fill="none" stroke="#0074af" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_206" data-name="Line 206" x2="14" transform="translate(0 7)" fill="none" stroke="#0074af" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
