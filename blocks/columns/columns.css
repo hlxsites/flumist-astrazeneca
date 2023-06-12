@@ -1,5 +1,7 @@
 .section > div.columns-wrapper {
   margin-bottom: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .home .section > div.columns-wrapper {
@@ -482,7 +484,11 @@
   max-height: 450px;
 }
 
-.about .columns-container > div:first-of-type .columns > div {
+.key-facts .columns-container > div:nth-child(2) > div > div > div:first-of-type {
+  transform: translateY(-100px);
+}
+
+.about .columns-container:first-of-type > div:first-of-type .columns > div {
   flex-direction: row-reverse;
 }
 
