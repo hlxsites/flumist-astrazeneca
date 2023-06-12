@@ -484,11 +484,10 @@ main .embed-placeholder picture::before {
 }
 
 .section.isi-fragment.isi-overlay  {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #FFF 0% 0% no-repeat padding-box;
   border-radius: 16px 16px 0 0;
-  box-shadow: 0px -3px 8px #0000001A;
+  box-shadow: 0 -3px 8px #0000001A;
   bottom: -400px;
-
   left: 50%;
   margin-left: -630px;
   z-index: 10;
