@@ -171,7 +171,7 @@ document.addEventListener('scroll', () => {
   const refElement = document.querySelector('.wheretofind');
 
   const x = refElement.getBoundingClientRect();
-  if (x.top < 350) {
+  if (x.top < 400 || window.screen.width < 900) {
     element.classList.remove('isi-overlay');
   } else {
     element.classList.add('isi-overlay');

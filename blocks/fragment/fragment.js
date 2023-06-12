@@ -54,7 +54,9 @@ export default async function decorate(block) {
           }
         };
         fragmentSection.prepend(div);
-        fragmentSection.classList.add('isi-overlay');
+        if (window.screen.width > 900) {
+          fragmentSection.classList.add('isi-overlay');
+        }
         // Add the blur element to the parent
         const blur = document.createElement('div');
         block.closest('.fragment-wrapper').parentNode.parentNode.prepend(blur);
