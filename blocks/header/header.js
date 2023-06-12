@@ -24,6 +24,13 @@ export default async function decorate(block) {
       if (section) section.classList.add(`nav-${c}`);
     });
 
+    const brandImg = nav.querySelector('picture');
+    const brandImgLink = document.createElement('a');
+    brandImgLink.href = '/';
+    brandImgLink.title = 'Home';
+    brandImg.after(brandImgLink);
+    brandImgLink.appendChild(brandImg);
+
     decorateIcons(nav);
     const navWrapper = document.createElement('div');
     navWrapper.className = 'nav-wrapper';
