@@ -42,7 +42,7 @@ export default function decorate(block) {
         minus.addEventListener('click', () => {
           h4UlContainer.classList.remove('open');
         });
-      })
+      });
     });
   });
   if (block.classList.contains('spray')) {
