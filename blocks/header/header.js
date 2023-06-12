@@ -31,6 +31,11 @@ export default async function decorate(block) {
     brandImg.after(brandImgLink);
     brandImgLink.appendChild(brandImg);
 
+    [...nav.querySelectorAll('.nav-sections li a')].forEach((link) => {
+      const linkUrl = new URL(link);
+      if (linkUrl.pathname === window.location.pathname) link.classList.add('current');
+    });
+
     decorateIcons(nav);
     const navWrapper = document.createElement('div');
     navWrapper.className = 'nav-wrapper';
