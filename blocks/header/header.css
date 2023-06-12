@@ -156,6 +156,7 @@ nav svg {
   .nav-extra {
     background-color: var(--highlight-background-color);
     padding: 0;
+    height: 0;
   }
 
   .nav-extra ul {
@@ -172,6 +173,7 @@ nav svg {
     margin: auto;
     letter-spacing: -0.14px;
     padding: 3px 22px;
+    display: none;
   }
 
   .nav-extra a:any-link {
@@ -204,16 +206,8 @@ nav svg {
     display: none;
   }
 
-  .nav-extra {
-    height: 0;
-  }
-
   nav[aria-expanded="true"] .nav-extra {
     height: unset;
-  }
-
-  .nav-extra li {
-    display: none;
   }
 
   .nav-extra ul li:nth-of-type(3),
