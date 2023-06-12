@@ -115,10 +115,6 @@ header nav a:any-link {
   padding: 0 10px;
 }
 
-.nav-sections li:last-of-type {
-  padding-right: 0;
-}
-
 .nav-tools {
   grid-area: tools;
   display: none;
@@ -285,10 +281,25 @@ nav svg {
     transform: translateY(6px);
     margin-left: 5px;
   }
+
+  .nav-extra li:nth-of-type(2) {
+    transform: translateY(-6px);
+  }
+
+  .nav-sections li {
+    padding-left: 12px;
+    padding-right: 16px;
+  }
+  
+  .nav-extra li:last-of-type,
+  .nav-sections li:last-of-type {
+    padding-right: 0;
+  }
 }
 
 .icon-media-arrow-down {
   height: 18px;
   width: 12px;
   transform: translateY(5px);
+  margin-left: 7px;
 }
