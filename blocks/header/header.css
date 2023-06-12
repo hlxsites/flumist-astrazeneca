@@ -82,6 +82,10 @@ header nav a:any-link {
   display: unset;
 }
 
+.nav-sections .current {
+  border-bottom: 2px solid;
+}
+
 @media (min-width: 900px) {
   .nav-extra ul li ul {
     position: absolute;
@@ -272,7 +276,7 @@ nav svg {
   .nav-brand img {
     translate: -7px -5px;
   }
-  
+
   .nav-sections li {
     padding-left: 12px;
     padding-right: 16px;
