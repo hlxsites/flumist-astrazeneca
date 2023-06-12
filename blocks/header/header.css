@@ -200,9 +200,25 @@ nav svg {
     padding-bottom: 15px;
   }
 
-  .nav-sections,
-  .nav-extra {
+  .nav-sections {
     display: none;
+  }
+
+  .nav-extra {
+    height: 0;
+  }
+
+  nav[aria-expanded="true"] .nav-extra {
+    height: unset;
+  }
+
+  .nav-extra li {
+    display: none;
+  }
+
+  .nav-extra ul li:nth-of-type(3),
+  nav[aria-expanded="true"] .nav-extra li {
+    display: block;
   }
 
   .nav-sections li:last-of-type a {
