@@ -490,7 +490,6 @@ main .embed-placeholder picture::before {
   bottom: -400px;
 
   left: 50%;
-  margin-left: -523px;
   margin-left: -630px;
   /*max-width: 1260px;*/
   z-index: 10;

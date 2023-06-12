@@ -471,7 +471,9 @@
   width: auto;
 }
 
-
+.section.isi-fragment.isi-overlay .columns.safety > div >div:nth-child(1) p strong {
+  color: #0074AF;
+}
 
 .home .columns.spray {
   margin-top:0;

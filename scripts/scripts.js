@@ -178,17 +178,23 @@ function getOffset(el) {
 
 addEventListener("scroll", (event) => {
 
-  const element = document.querySelector('.isi-fragment')
+  const element = document.querySelector('.isi-fragment');
+  // use wheretofind as a reference element
+  const refElement = document.querySelector('.wheretofind');
   console.log('scrolling');
+
   console.log(window.scrollY);
-  const x = element.getBoundingClientRect();
-  console.log('end scrolling');
-  if (x.top < 500) {
+  const x = refElement.getBoundingClientRect();
+  if (x.top < 350) {
     element.classList.remove('isi-overlay')
   } else {
     element.classList.add('isi-overlay')
   }
   const top = getOffset(element).top;
+  console.log('Window scrolly: ' + window.scrollY + ' offset: ' + top);
+
+  console.log('Offset: ' + top);
+
   console.log('end');
   // console.log(element.getBoundingClientRect())
 })
