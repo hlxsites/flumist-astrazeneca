@@ -306,7 +306,6 @@
 
 .columns.large ul {
   margin:0;
-  padding:0;
   margin-top:30px;
 }
 
@@ -440,7 +439,48 @@
   color: var(--text-blue);
 }
 
-/* at the bottom (when specificity allows) mostly quick and dirty styling for POC */
+.columns.accordion .h4-ul {
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 10px;
+  max-height: 40px;
+  overflow: hidden;
+  transition: max-height .5s;
+}
+
+.columns.accordion .h4-ul h4 {
+  margin-bottom: 20px;
+}
+
+.columns.accordion .h4-ul .icon {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.columns.accordion .h4-ul .icon-minus {
+  display: none;
+}
+
+.columns.accordion .h4-ul.open .icon-minus {
+  display: block;
+}
+
+.columns.accordion .h4-ul.open .icon-plus {
+  display: none;
+}
+
+.columns.accordion .h4-ul ul {
+  margin: 0;
+}
+
+.columns.accordion .h4-ul.open {
+  height: 100%;
+  max-height: 450px;
+}
 
 .about .columns-container > div:first-of-type .columns > div {
   flex-direction: row-reverse;
@@ -473,6 +513,10 @@
 
 .section.isi-fragment.isi-overlay .columns.safety > div >div:nth-child(1) p strong {
   color: #0074AF;
+}
+
+.key-facts .columns-container > div:nth-child(2) > div > div > div:first-of-type {
+  transform: translateY(-100px);
 }
 
 .home .columns.spray {
