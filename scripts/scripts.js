@@ -164,3 +164,31 @@ async function loadPage() {
 }
 
 loadPage();
+
+var originalIsiTop = 0;
+
+function getOffset(el) {
+  const rect = el.getBoundingClientRect();
+  return {
+    left: rect.left + window.scrollX,
+    top: rect.top + window.scrollY
+  };
+}
+
+
+addEventListener("scroll", (event) => {
+
+  const element = document.querySelector('.isi-fragment')
+  console.log('scrolling');
+  console.log(window.scrollY);
+  const x = element.getBoundingClientRect();
+  console.log('end scrolling');
+  if (x.top < 500) {
+    element.classList.remove('isi-overlay')
+  } else {
+    element.classList.add('isi-overlay')
+  }
+  const top = getOffset(element).top;
+  console.log('end');
+  // console.log(element.getBoundingClientRect())
+})

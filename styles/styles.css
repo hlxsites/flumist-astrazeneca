@@ -483,6 +483,122 @@ main .embed-placeholder picture::before {
   }
 }
 
+.section.isi-fragment.isi-overlay  {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0px -3px 8px #0000001A;
+  bottom: -400px;
+
+  left: 50%;
+  margin-left: -523px;
+  margin-left: -630px;
+  /*max-width: 1260px;*/
+  z-index: 10;
+  position: fixed;
+  transition: bottom 1s ease;
+}
+
+.section.isi-fragment.isi-overlay.open  {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0px -3px 8px #0000001A;
+  bottom: 0;
+
+  left: 50%;
+  margin-left: -523px;
+  margin-left: -630px;
+  /*max-width: 1260px;*/
+  z-index: 10;
+  position: fixed;
+  transition: bottom 1s ease;
+}
+
+.isi-overlay .columns.safety > div {
+  padding:0;
+}
+
+/*.section.isi-fragment.isi-overlay .isi-blur {*/
+/*  display: none;*/
+/*  background-color: white;*/
+/*}*/
+
+/*.section.isi-fragment.isi-overlay.open .isi-blur {*/
+/*  display: block;*/
+/*  background-color: pink;*/
+/*  position: fixed;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  z-index: 5;*/
+/*  max-width: 100%;*/
+/*  !*opacity: 20%;*!*/
+/*  animation-name: color-change;*/
+/*  animation-duration: 2s;*/
+/*  background: #231F2080 0% 0% no-repeat padding-box;*/
+/*}*/
+
+.isi-blur {
+  display: none;
+  background-color: white;
+}
+
+.isi-blur.open {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  max-width: 100%;
+  /*opacity: 20%;*/
+  animation-name: color-change;
+  animation-duration: 2s;
+  background: #231F2080 0% 0% no-repeat padding-box;
+}
+
+.section.isi-fragment.isi-overlay > div {
+  max-width: 1260px;
+  width: 1260px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /*padding-left: 20px;*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+}
+
+.section.isi-fragment.isi-overlay > div.isi-arrow {
+  /*background-color: pink;*/
+  height: 30px;
+  width: 98%;
+  /*display: none;*/
+  position: absolute;
+  background-image: url("/icons/arrows-angle-expand.svg");
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: right;
+  cursor: pointer;
+}
+
+.section.isi-fragment.isi-overlay.open > div.isi-arrow {
+  /*background-color: pink;*/
+  height: 30px;
+  width: 98%;
+  /*display: none;*/
+  position: absolute;
+  background-image: url("/icons/arrows-angle-contract.svg");
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: right;
+  cursor: pointer;
+}
+
+.section.isi-fragment.isi-overlay > div > div > div {
+  border: 0;
+}
+
 @media (min-width: 900px) {
   .embed-placeholder {
     width: 511px;
