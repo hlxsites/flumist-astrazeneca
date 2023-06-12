@@ -41,20 +41,18 @@ export default async function decorate(block) {
       if (fragmentSection.classList.contains('isi-fragment')) {
         const div = document.createElement('div');
         div.classList.add('isi-arrow');
-        div.onclick = function (){
+        div.onclick = function () {
           const element = document.querySelector('.isi-fragment');
           if (element.classList.contains('open')) {
-            console.log('closing');
             element.classList.remove('open');
             const blur = document.querySelector('.isi-blur');
             blur.classList.remove('open');
           } else {
-            console.log('opening')
             element.classList.add('open');
             const blur = document.querySelector('.isi-blur');
             blur.classList.add('open');
           }
-        }
+        };
         fragmentSection.prepend(div);
         fragmentSection.classList.add('isi-overlay');
         // Add the blur element to the parent

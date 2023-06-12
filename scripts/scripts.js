@@ -165,36 +165,15 @@ async function loadPage() {
 
 loadPage();
 
-var originalIsiTop = 0;
-
-function getOffset(el) {
-  const rect = el.getBoundingClientRect();
-  return {
-    left: rect.left + window.scrollX,
-    top: rect.top + window.scrollY
-  };
-}
-
-
-addEventListener("scroll", (event) => {
-
+document.addEventListener('scroll', () => {
   const element = document.querySelector('.isi-fragment');
   // use wheretofind as a reference element
   const refElement = document.querySelector('.wheretofind');
-  console.log('scrolling');
 
-  console.log(window.scrollY);
   const x = refElement.getBoundingClientRect();
   if (x.top < 350) {
-    element.classList.remove('isi-overlay')
+    element.classList.remove('isi-overlay');
   } else {
-    element.classList.add('isi-overlay')
+    element.classList.add('isi-overlay');
   }
-  const top = getOffset(element).top;
-  console.log('Window scrolly: ' + window.scrollY + ' offset: ' + top);
-
-  console.log('Offset: ' + top);
-
-  console.log('end');
-  // console.log(element.getBoundingClientRect())
-})
+});
