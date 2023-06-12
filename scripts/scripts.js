@@ -164,3 +164,16 @@ async function loadPage() {
 }
 
 loadPage();
+
+document.addEventListener('scroll', () => {
+  const element = document.querySelector('.isi-fragment');
+  // use wheretofind as a reference element
+  const refElement = document.querySelector('.wheretofind');
+
+  const x = refElement.getBoundingClientRect();
+  if (x.top < 400 || window.screen.width < 900) {
+    element.classList.remove('isi-overlay');
+  } else {
+    element.classList.add('isi-overlay');
+  }
+});
