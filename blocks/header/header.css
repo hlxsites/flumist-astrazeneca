@@ -156,6 +156,7 @@ nav svg {
   .nav-extra {
     background-color: var(--highlight-background-color);
     padding: 0;
+    height: 0;
   }
 
   .nav-extra ul {
@@ -172,6 +173,7 @@ nav svg {
     margin: auto;
     letter-spacing: -0.14px;
     padding: 3px 22px;
+    display: none;
   }
 
   .nav-extra a:any-link {
@@ -200,9 +202,17 @@ nav svg {
     padding-bottom: 15px;
   }
 
-  .nav-sections,
-  .nav-extra {
+  .nav-sections {
     display: none;
+  }
+
+  nav[aria-expanded="true"] .nav-extra {
+    height: unset;
+  }
+
+  .nav-extra ul li:nth-of-type(3),
+  nav[aria-expanded="true"] .nav-extra li {
+    display: block;
   }
 
   .nav-sections li:last-of-type a {
