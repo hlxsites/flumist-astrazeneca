@@ -511,6 +511,10 @@
   width: auto;
 }
 
+.key-facts .columns-container > div:nth-child(2) > div > div > div:first-of-type {
+  transform: translateY(-100px);
+}
+
 .home .columns.spray {
   margin-top:0;
 }
