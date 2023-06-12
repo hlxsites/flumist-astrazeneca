@@ -162,6 +162,10 @@ nav svg {
     margin: 0;
     padding: 0;
     height: 35px;
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    padding-inline-start: 0;
   }
 
   .nav-extra li {
@@ -230,13 +234,6 @@ nav svg {
   .nav-sections ul {
     display: block;
     font-size: 20px;
-    line-height: 32px;
-    padding-inline-start: 0;
-  }
-
-  .nav-extra ul {
-    display: block;
-    font-size: 14px;
     line-height: 32px;
     padding-inline-start: 0;
   }
