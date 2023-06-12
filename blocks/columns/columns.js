@@ -1,4 +1,4 @@
-import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
+import { createOptimizedPicture, decorateIcons } from '../../scripts/lib-franklin.js';
 
 export default function decorate(block) {
   const cols = [...block.firstElementChild.children];
@@ -26,6 +26,23 @@ export default function decorate(block) {
         const towUp = oneUp.previousSibling.previousSibling;
         imgH4PContainer.append(towUp, oneUp, imgH4P);
       });
+      [...col.querySelectorAll('.accordion h4 + ul')].forEach((h4Ul) => {
+        const h4UlContainer = document.createElement('div');
+        h4UlContainer.classList.add('h4-ul');
+        h4Ul.after(h4UlContainer);
+        h4UlContainer.append(h4Ul.previousSibling.previousSibling, h4Ul);
+        const minus = document.createElement('span');
+        minus.classList.add('icon', 'icon-minus');
+        const plus = document.createElement('span');
+        plus.classList.add('icon', 'icon-plus');
+        h4UlContainer.append(minus, plus);
+        plus.addEventListener('click', () => {
+          h4UlContainer.classList.add('open');
+        });
+        minus.addEventListener('click', () => {
+          h4UlContainer.classList.remove('open');
+        });
+      })
     });
   });
   if (block.classList.contains('spray')) {
@@ -34,4 +51,5 @@ export default function decorate(block) {
       sprayPicture.parentElement.append(createOptimizedPicture('/images/mister.png', 'Flumist Spray', false, [{ width: '750' }]));
     }
   }
+  decorateIcons(block);
 }
