@@ -322,14 +322,14 @@
   height: 43px;
 }
 
-.columns.large.cards ul li {
+/* .columns.large.cards ul li {
   background-color: var(--text-white);
   border-radius: 8px;
   margin-bottom: 25px;
   padding: 24px 40px 20px;
   position: relative;
   max-width: 431px;
-}
+} */
 
 /* .columns-container div.columns-wrapper:first-of-type .columns.large.cards ul:nth-of-type(1) li {
   margin:0;
