@@ -38,30 +38,30 @@ export default async function decorate(block) {
   if (fragment) {
     const fragmentSection = fragment.querySelector(':scope .section');
     if (fragmentSection) {
-      if (fragmentSection.classList.contains('isi-fragment')) {
-        const div = document.createElement('div');
-        div.classList.add('isi-arrow');
-        div.onclick = function () {
-          const element = document.querySelector('.isi-fragment');
-          if (element.classList.contains('open')) {
-            element.classList.remove('open');
-            const blur = document.querySelector('.isi-blur');
-            blur.classList.remove('open');
-          } else {
-            element.classList.add('open');
-            const blur = document.querySelector('.isi-blur');
-            blur.classList.add('open');
-          }
-        };
-        fragmentSection.prepend(div);
-        if (window.screen.width > 900 && !window.location.href.endsWith('isi')) {
-          fragmentSection.classList.add('isi-overlay');
-        }
-        // Add the blur element to the parent
-        const blur = document.createElement('div');
-        block.closest('.fragment-wrapper').parentNode.parentNode.append(blur);
-        blur.classList.add('isi-blur');
-      }
+      // if (fragmentSection.classList.contains('isi-fragment')) {
+      //   const div = document.createElement('div');
+      //   div.classList.add('isi-arrow');
+      //   div.onclick = function () {
+      //     const element = document.querySelector('.isi-fragment');
+      //     if (element.classList.contains('open')) {
+      //       element.classList.remove('open');
+      //       const blur = document.querySelector('.isi-blur');
+      //       blur.classList.remove('open');
+      //     } else {
+      //       element.classList.add('open');
+      //       const blur = document.querySelector('.isi-blur');
+      //       blur.classList.add('open');
+      //     }
+      //   };
+      //   fragmentSection.prepend(div);
+      //   if (window.screen.width > 900 && !window.location.href.endsWith('isi')) {
+      //     fragmentSection.classList.add('isi-overlay');
+      //   }
+      //   // Add the blur element to the parent
+      //   const blur = document.createElement('div');
+      //   block.closest('.fragment-wrapper').parentNode.parentNode.append(blur);
+      //   blur.classList.add('isi-blur');
+      // }
       block.closest('.section').classList.add(...fragmentSection.classList);
       block.closest('.fragment-wrapper').replaceWith(...fragmentSection.childNodes);
     }
