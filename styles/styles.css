@@ -42,7 +42,7 @@
 @font-face {
   font-family: "open-sans-normal-700-fallback";
   font-weight: 700;
-  size-adjust: 104.7%;
+  size-adjust: 111.791%;
   src: local("Arial");
 }
 
@@ -120,7 +120,7 @@
 body {
   font-size: var(--body-font-size-m);
   margin: 0;
-  /* font-family: var(--body-font-family); */
+  font-family: var(--body-font-family);
   line-height: 1.4;
   color: var(--text-color);
   display: none;
