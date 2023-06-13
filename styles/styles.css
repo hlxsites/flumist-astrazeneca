@@ -67,7 +67,7 @@
 
   /* fonts */
   --body-font-family: 'Open Sans', 'open-sans-normal-400-fallback', arial, sans-serif;
-  --heading-font-family: 'Open Sans 700', arial, sans-serif;
+  --heading-font-family: 'Open Sans 700', 'open-sans-normal-700-fallback', arial, sans-serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
