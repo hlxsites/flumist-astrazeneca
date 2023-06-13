@@ -331,13 +331,13 @@
   max-width: 431px;
 }
 
-.columns-container div.columns-wrapper:first-of-type .columns.large.cards ul:nth-of-type(1) li {
+/* .columns-container div.columns-wrapper:first-of-type .columns.large.cards ul:nth-of-type(1) li {
   margin:0;
   border-radius: 8px;
-  /* padding: 19px 16px; */
+  padding: 19px 16px;
   margin-bottom: 9px;
   color: var(--text-white);
-}
+} */
 
 .columns-container div.columns-wrapper:first-of-type .columns.large.cards ul:nth-of-type(1) li:nth-of-type(1)::before {
   background-image: none;
