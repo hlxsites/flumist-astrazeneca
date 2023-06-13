@@ -59,7 +59,7 @@ export default async function decorate(block) {
         }
         // Add the blur element to the parent
         const blur = document.createElement('div');
-        block.closest('.fragment-wrapper').parentNode.parentNode.prepend(blur);
+        block.closest('.fragment-wrapper').parentNode.parentNode.append(blur);
         blur.classList.add('isi-blur');
       }
       block.closest('.section').classList.add(...fragmentSection.classList);
