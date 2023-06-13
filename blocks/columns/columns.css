@@ -496,6 +496,10 @@
   flex-direction: row-reverse;
 }
 
+.about-flu .columns-container:first-of-type > div:first-of-type .columns > div {
+  flex-direction: row-reverse;
+}
+
 .about-flu div.columns-container:first-of-type h3 {
   font-size: 24px;
 }
@@ -509,14 +513,14 @@
   font-size: 20px;
 }
 
-.about-flu div.columns-container:first-of-type .columns > div > div:first-of-type p.picture {
+.about-flu div.columns-container:first-of-type .columns > div > div:nth-of-type(2) p.picture {
   width: 249px;
   height: 72px;
   display: inline-block;
   margin-bottom: 5px;
 }
 
-.about-flu div.columns-container:first-of-type .columns > div > div:first-of-type p.picture img {
+.about-flu div.columns-container:first-of-type .columns > div > div:nth-of-type(2) p.picture img {
   height: 72px;
   width: auto;
 }

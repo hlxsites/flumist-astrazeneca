@@ -12,7 +12,7 @@ import {
   loadCSS,
 } from './lib-franklin.js';
 
-const LCP_BLOCKS = []; // add your LCP blocks to the list
+const LCP_BLOCKS = ['.columns']; // add your LCP blocks to the list
 
 /**
  * Builds all synthetic blocks in a container element.
