@@ -189,6 +189,10 @@
   padding-right: 25px;
 }
 
+.important-safety-information .columns.safety > div {
+  border: 0;
+}
+
 .home .columns.spray > div {
   display: flex;
   justify-content: space-between;

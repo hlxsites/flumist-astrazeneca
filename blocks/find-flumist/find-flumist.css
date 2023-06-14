@@ -47,7 +47,7 @@
   height: 50px;
   border: 1px solid #989696;
   border-radius: 8px;
-  width: calc(100vw - 50px);
+  width: calc((100vw/2) - 150px);
   background-color: var(--text-white);
   margin:0;
 }
