@@ -10,6 +10,7 @@
  * governing permissions and limitations under the License.
  */
 
+ /* optimize CLS */
  @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -244,7 +245,6 @@ a:hover {
   color: var(--link-hover-color);
 }
 
-/* buttons */
 .button-container {
   margin-top: 30px;
 }
