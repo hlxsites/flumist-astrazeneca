@@ -184,6 +184,10 @@
   margin-bottom: 30px;
 }
 
+.important-safety-information .columns.safety > div {
+  border: 0;
+}
+
 .home .section > div {
   padding-left: 25px;
   padding-right: 25px;
